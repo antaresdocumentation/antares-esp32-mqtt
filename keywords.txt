@@ -6,7 +6,7 @@
 # Classes (KEYWORD1)
 #######################################
 
-AntaresESP8266MQTT	KEYWORD1
+AntaresESP32MQTT	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)

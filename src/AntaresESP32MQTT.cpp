@@ -19,7 +19,7 @@ void AntaresESP32MQTT::setMqttServer() {
 }
 
 void AntaresESP32MQTT::checkMqttConnection() {
-    _subscriptionTopic = "/oneM2M/req/" + _accessKey + "/antares-cse/json";
+    _subscriptionTopic = "/oneM2M/resp/antares-cse/" + _accessKey + "/json";
 
     if(!client.connected()) {
         while(!client.connected()) {
@@ -241,5 +241,5 @@ String AntaresESP32MQTT::ipToString(IPAddress ip) {
 }
 
 void AntaresESP32MQTT::setSubscriptionTopic() {
-    _subscriptionTopic = "/oneM2M/req/" + _accessKey + "/antares-cse/json";
+    _subscriptionTopic = "/oneM2M/resp/antares-cse/" + _accessKey + "/json";
 }
